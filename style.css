@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,118.6,100..900;1,118.6,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Readex+Pro:wght@160..700&display=swap');
 :root {
     --padding: 4%;
     font-size: 16px;
@@ -18,14 +19,14 @@
 }
 
 html {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Readex Pro", sans-serif;
     color: var(--bb);
     scroll-behavior: smooth;
 }
 
 h1,
 h2 {
-    font-family: "Saira", sans-serif;
+    font-family: "Readex Pro", sans-serif;
 }
 
 ul {
@@ -40,6 +41,8 @@ a {
 /* الكلاسات متعددة الاستخدامات */
 .text-pry {
     color: var(--b);
+    font-family: "Readex Pro", sans-serif;
+
 
 }
 
@@ -78,6 +81,10 @@ a {
     width: 100%;
     z-index: 1;
 }
+#home .navbar nav .btn-pry{
+ 
+    margin: 0.30rem;
+}
 
 #home .navbar nav {
     display: flex;
@@ -104,11 +111,20 @@ a {
     justify-content: center;
     align-items: center;
 }
+#home .navbar nav ul .btn-pry{
+    margin: 0 2px;
+    font-weight: 600;
+}
 
 #home .navbar nav ul a {
-    margin: 0 15px;
+    margin: 0 20px;
     color: var(--b);
     font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+#home .navbar nav ul a:hover{
+    color: var(--bb);
 }
 
 #home .header-contant {
@@ -123,11 +139,11 @@ a {
 }
 
 #home .header-contant .content-text {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 #home .header-contant img {
-    max-width: 450px;
+    max-width: 300px;
 }
 
 #home .header-contant P span {
@@ -138,7 +154,7 @@ a {
 #home .header-contant h1 {
     font-size: 60px;
     color: var(--bb);
-    text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+    text-shadow: -3px 3px 3px rgb(0, 0, 0, 0.2);
     margin-top: 10px;
 }
 
@@ -159,7 +175,7 @@ a {
     background-color: var(--defcolor);
     color: var(--bb);
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 10px;
     transition: all 0.3s ease;
 
 }
@@ -269,7 +285,7 @@ a {
 }
 
 #skills .skills-content .row .item:hover {
-    box-shadow: 1px 1px 10px #20c997;
+    box-shadow: -1px 1px 10px #20c997;
 }
 
 #Services,
@@ -279,7 +295,7 @@ a {
 
 #Services .heading img {
     width: 120px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #Services .heading {
@@ -305,7 +321,7 @@ a {
 #Services .row .item {
     background-color: var(--defcolor);
     padding: 30px 15px;
-    box-shadow: 1px 1px 7px #0080805d;
+    box-shadow: -1px 1px 7px #0080805d;
     border-radius: 5px;
     transition: all 0.3s ease;
 
@@ -335,8 +351,8 @@ a {
 
 #Portfolio .row .item img {
     max-width: 100%;
-    border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     border-bottom: 2px solid #6c6d6d;
 
 
@@ -355,7 +371,7 @@ a {
     background-color: var(--whiteshado);
     border-radius: 5px;
     transition: all 0.3s ease;
-    box-shadow: 1px 1px 10px #002e2ed2;
+    box-shadow: -1px 1px 10px #002e2ed2;
 }
 
 #Portfolio .row .item:hover {
@@ -390,7 +406,7 @@ a {
     column-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--defcolor);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
     padding: 2rem 3rem;
     border-radius: 10px;
 }
@@ -420,11 +436,20 @@ a {
 #footer p {
     padding: 0.67rem 0;
 }
-
-@media (max-width: 768px) {
-    #home .navbar nav {
+@media (max-width: 853px){
+   #home .navbar nav,
+    #home .navbar nav .btn-pry {
         display: block;
         text-align: center;
+        margin: 0.3rem;
+    }
+}
+@media (max-width: 768px) {
+    #home .navbar nav,
+    #home .navbar nav .btn-pry {
+        display: block;
+        text-align: center;
+        margin: 0.3rem;
     }
 
     #home .navbar nav .logo {
@@ -433,11 +458,14 @@ a {
         justify-content: center;
     }
 
-    #home .navbar nav ul {
+    #home .navbar nav ul,
+    #home .navbar nav .btn-pry {
         margin-top: 20px;
     }
 
-    #home .navbar nav ul a {
+    #home .navbar nav ul a,
+    #home .navbar nav .btn-pry
+    {
         margin: 0 8px;
     }
 
@@ -519,8 +547,17 @@ a {
     #Contact .row {
         padding: 2rem 1rem;
     }
-    #home .navbar nav ul a {
-        font-size: 12px;
+    #home .navbar nav ul a ,
+    #home .navbar nav .btn-pry {
+        font-size: 8px;
+        margin: 0.2rem;
     }
+    #home .navbar nav .btn-pry {
+        width: 10px;
+        font-size: 5px;
+        text-align: center;
+        position: relative;
+    }
+    
 
 }
