@@ -424,6 +424,7 @@ a {
     outline: none;
     background-color: var(--whiteshado);
     border: 1px solid rgb(2, 116, 116);
+    font-family: "Readex Pro", sans-serif;
 }
 
 #footer {
@@ -554,9 +555,10 @@ a {
     }
     #home .navbar nav .btn-pry {
         width: 10px;
-        font-size: 5px;
-        text-align: center;
-        position: relative;
+        font-size: 13px;
+      
+ 
+       
     }
     
 
