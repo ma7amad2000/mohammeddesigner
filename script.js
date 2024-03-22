@@ -9,7 +9,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 });
 document.getElementById("arabicButton").addEventListener("click", function () {
     // قم بتغيير النصوص إلى اللغة العربية
-    document.getElementById("greeting").innerHTML = 'أنا <span class="text-pry">محمد مكراز,</span>مصمم جرافيك';
+    document.getElementById("greeting").innerHTML = ' <h3 id="greeting" dir = "rtl">أنا <span class="text-pry">محمد مكراز,</span>مصمم جرافيك</h3>';
 });
 
 document.getElementById("englishButton").addEventListener("click", function () {
@@ -37,7 +37,7 @@ document.getElementById("englishButton").addEventListener("click", function () {
 
 document.getElementById("arabicButton").addEventListener("click", function () {
     // قم بتغيير النصوص إلى اللغة العربية
-    document.getElementById("greeting2").innerHTML = '<p id="greeting2">مرحبا, أنا محمد مكراز، شخص متعدد الأوجه ولدي شغف بالإبداع والتكنولوجيا. كمصمم جرافيك، أجد متعة في جلب الأفكار إلى الحياة من خلال التواصل المرئي. التصميم الجرافيكي، بالنسبة لي، ليس مجرد مهنة ولكنه منصة للتعبير عن أفكاري ومشاعري بطرق مبتكرة. إلى جانب جهودي في التصميم، أنا متحمس بشدة للتصوير الفوتوغرافي والتكوين. من خلال العدسة، ألتقط اللحظات التي تحكي قصصًا مقنعة وتثير مشاعر مختلفة. بالإضافة إلى ذلك، لدي اهتمام كبير بالبرمجة، حيث أستفيد من تفكيري الإبداعي لتطوير الحلول الرقمية والتجارب التفاعلية.  في كل هذه المجالات، أسعى باستمرار إلى تعزيز مهاراتي وتوسيع معرفتي، بهدف إحداث تأثير إيجابي وإلهام الآخرين من خلال عملي.</p>';
+    document.getElementById("greeting2").innerHTML = '<p id="greeting2" dir="rtl">مرحبا, أنا محمد مكراز، شخص متعدد الأوجه ولدي شغف بالإبداع والتكنولوجيا. كمصمم جرافيك، أجد متعة في جلب الأفكار إلى الحياة من خلال التواصل المرئي. التصميم الجرافيكي، بالنسبة لي، ليس مجرد مهنة ولكنه منصة للتعبير عن أفكاري ومشاعري بطرق مبتكرة. إلى جانب جهودي في التصميم، أنا متحمس بشدة للتصوير الفوتوغرافي والتكوين. من خلال العدسة، ألتقط اللحظات التي تحكي قصصًا مقنعة وتثير مشاعر مختلفة. بالإضافة إلى ذلك، لدي اهتمام كبير بالبرمجة، حيث أستفيد من تفكيري الإبداعي لتطوير الحلول الرقمية والتجارب التفاعلية.  في كل هذه المجالات، أسعى باستمرار إلى تعزيز مهاراتي وتوسيع معرفتي، بهدف إحداث تأثير إيجابي وإلهام الآخرين من خلال عملي.</p>';
 });
 
 document.getElementById("englishButton").addEventListener("click", function () {
