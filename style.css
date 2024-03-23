@@ -730,7 +730,7 @@ a {
     
     @media (max-width: 912px){
         #home .navbar nav ul a {
-            margin:  0;
+            margin:  0.4rem;
             font-size: 10px;
             transition: all 0.3s ease;
         }
