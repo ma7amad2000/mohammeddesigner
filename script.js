@@ -7,6 +7,13 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     // You can replace 'your-email@example.com' with your email address
     window.location.href = "sara.mktaz@gmail.com?subject=Message from " + name + " (" + email + ")&body=" + message;
 });
+
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+
 document.getElementById("arabicButton").addEventListener("click", function () {
     // قم بتغيير النصوص إلى اللغة العربية
     document.getElementById("greeting").innerHTML = ' <h3 id="greeting" dir = "rtl">أنا <span class="text-pry">محمد مكراز,</span>مصمم جرافيك</h3>';
