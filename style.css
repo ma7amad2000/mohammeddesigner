@@ -18,15 +18,33 @@
     --whiteshado: rgb(235, 232, 232);
 }
 
+body {
+    background-color: #fff; /* لون الخلفية الأبيض في الوضع الافتراضي */
+    color: #000; /* لون النص الأسود في الوضع الافتراضي */
+}
+
+.dark-mode {
+    background-color: var(--blak); /* لون الخلفية الأسود في الوضع الداكن */
+    color: #000000; /* لون النص الأبيض في الوضع الداكن */
+    transition: all 0.3s ease;
+}
+
 html {
     font-family: "Readex Pro", sans-serif;
     color: var(--bb);
     scroll-behavior: smooth;
 }
+.dark-mode #home{
+    background-color: #2b2a2a;
+    transition: all 0.3s ease;
+}
 
 h1,
 h2 {
     font-family: "Readex Pro", sans-serif;
+}
+.dark-mode h1{
+    color: rgb(4, 150, 150);
 }
 
 ul {
@@ -45,6 +63,11 @@ a {
 
 
 }
+.dark-mode .text-pry {
+    color: var(--bleu);
+    transition: all 0.3s ease;
+
+}
 
 .btn-pry {
     background-color: var(--b);
@@ -57,15 +80,25 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+.dark-mode .btn-pry {
+    background-color: var(--bleu);
+    color: var(--blak);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
 .btn-pry:hover {
     background-color: rgb(160, 122, 17);
+}
+.dark-mode .btn-pry:hover {
+    background-color: #068861;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
+    
 }
 
 /*header start */
@@ -80,6 +113,11 @@ a {
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+.dark-mode #home .navbar {
+    background-color: var(--blak);
+    transition: all 0.3s ease;
+
 }
 #home .navbar nav .btn-pry{
  
@@ -100,6 +138,9 @@ a {
     color: var(--bb);
     font-size: 24px;
     font-weight: 600;
+}
+.dark-mode #home #logo {
+    color: var(--whiteshado);
 }
 
 #home #logo img {
@@ -125,6 +166,9 @@ a {
 }
 #home .navbar nav ul a:hover{
     color: var(--bb);
+}
+.dark-mode #home .navbar nav ul a:hover{
+    color: var(--whiteshado);
 }
 
 #home .header-contant {
@@ -157,12 +201,19 @@ a {
     text-shadow: -3px 3px 3px rgb(0, 0, 0, 0.2);
     margin-top: 10px;
 }
+.dark-mode #home .header-contant h1 {
+    color: rgb(7, 155, 155);
+}
 
 #home .header-contant .title {
     font-size: 20px;
     color: var(--blak);
     margin: 10px 0;
     font-weight: 500;
+}
+.dark-mode #home .header-contant .title {
+    color: var(--whiteshado);
+    transition: all 0.3s ease;
 }
 
 #home .header-contant .social {
@@ -176,6 +227,12 @@ a {
     color: var(--bb);
     border-radius: 50%;
     margin-left: 10px;
+    transition: all 0.3s ease;
+
+}
+.dark-mode #home .header-contant .social a i {
+    background-color: var(--blak);
+    color: var(--whiteshado);
     transition: all 0.3s ease;
 
 }
@@ -205,6 +262,13 @@ a {
     font-weight: 600;
     letter-spacing: 1px;
 }
+.dark-mode #About h2,
+#skills h2,
+#Services h2,
+#Portfolio h2,
+#Contact h2 {
+    color: var(--whiteshado);
+}
 
 #About hr,
 #skills hr,
@@ -216,6 +280,12 @@ a {
     border: none;
     margin: 5px auto 0;
     border-radius: 20px;
+}
+.dark-mode #About hr,
+#skills hr,
+#Services hr,
+#Portfolio hr {
+    background-color: var(--bleu);
 }
 
 #About .about-content {
@@ -231,18 +301,38 @@ a {
     margin-bottom: 20px;
     font-weight: 900;
 }
+#About .about-content .col1 h3 {
+    font-size: 28px;
+    color: var(--bb);
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.dark-mode #About .about-content .col1 h3 {
+    color: var(--whiteshado);
+}
 
 #About .about-content .col1 p {
     color: var(--blak);
     margin-bottom: 20px;
     line-height: 1.4;
 }
+.dark-mode #About .about-content .col1 p {
+    color: var(--whiteshado);
+}
+.dark-mode #About .about-content .col2 p {
+    color: var(--whiteshado);
+    border-bottom: 0.89px solid rgb(216, 166, 28);
+  
+}
+
+
 
 #About .about-content .col2 p {
     color: var(--blak);
     margin-bottom: 20px;
-    border-bottom: 0.89px solid rgb(216, 166, 28);
+    border-bottom: 0.89px solid rgb(2, 116, 116);
     padding-bottom: 5px;
+    transition: all 0.3s ease;
 }
 
 
@@ -255,7 +345,9 @@ a {
 #Portfolio h2 {
     color: var(--whiteshado);
 }
-
+.dark-mode #skills samp{
+    color: var(--b);
+}
 #skills .row img {
     max-width: 70px;
 }
@@ -292,6 +384,9 @@ a {
 #Contact {
     background-color: var(--whiteshado);
 }
+.dark-mode #Services {
+    background-color: var(--blak);
+}
 
 #Services .heading img {
     width: 120px;
@@ -326,19 +421,34 @@ a {
     transition: all 0.3s ease;
 
 }
+.dark-mode #Services .row .item {
+    background-color: rgb(19, 18, 18);
+    transition: all 0.3s ease;
+
+}
 
 #Services h2 {
     color: var(--bb);
+}
+.dark-mode #Services h2 {
+    color: var(--whiteshado);
 }
 
 #Services .row .item h3 {
     margin: 15px 0;
     color: var(--b);
 }
+.dark-mode #Services .row .item h3 {
+
+    color: var(--bleu);
+}
 
 #Services .row .item p {
     color: #1d1c1c;
     font-size: 14px;
+}
+.dark-mode #Services .row .item p {
+    color: var(--whiteshado);
 }
 
 #Services .row .item:hover {
@@ -347,6 +457,9 @@ a {
 
 #Portfolio {
     background-color: var(--bb);
+}
+.dark-mode #Portfolio h2 samp{
+    color: var(--b);
 }
 
 #Portfolio .row .item img {
@@ -398,8 +511,18 @@ a {
 
 #Contact {
     padding: 4rem 0;
+    background-color: var(--whiteshado);
 }
 
+#Contact h2{
+    color: var(--blak);
+}
+.dark-mode #Contact{
+    background-color: var(--blak);
+}
+.dark-mode #Contact h2{
+    color: var(--whiteshado);
+}
 #Contact .row {
     margin-top: 4rem;
     display: grid;
@@ -512,7 +635,7 @@ a {
 
 @media (max-width: 528px) {
     #home .header-contant h1 {
-        font-size: 35px;
+        font-size: 30px;
 
 
     }
