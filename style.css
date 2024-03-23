@@ -80,6 +80,19 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+#home .navbar nav .btn-pry {
+    background-color: var(--b);
+    color: var(--bb);
+    padding: 8px 20px;
+    width: 50px;
+    font-weight: 400;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 .dark-mode .btn-pry {
     background-color: var(--bleu);
     color: var(--blak);
@@ -132,6 +145,12 @@ a {
     max-width: 1100px;
     padding: 1.5rem 2rem;
 
+}
+#home .navbar nav ul .moon{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    
 }
 
 #home #logo {
@@ -523,6 +542,9 @@ a {
 .dark-mode #Contact h2{
     color: var(--whiteshado);
 }
+.dark-mode #Contact .row .p{
+    color: var(--whiteshado);
+}
 #Contact .row {
     margin-top: 4rem;
     display: grid;
@@ -533,11 +555,22 @@ a {
     padding: 2rem 3rem;
     border-radius: 10px;
 }
+.dark-mode #Contact .row{
+    background-color: rgb(19, 18, 18);
+}
 
 #Contact .row img {
     max-width: 400px;
 }
+.dark-mode #Contact .row input{
+    background-color: var(--blak);
+    color: var(--whiteshado);
+}
+.dark-mode #Contact .row .tt{
+    background-color: var(--blak);
+    color: var(--whiteshado);
 
+}
 #Contact .row input,
 #Contact .row textarea {
     display: block;
@@ -632,7 +665,18 @@ a {
 
 
 }
+@media (max-width: 375px){
+    #home .header-contant img {
+        margin-top: 2rem;
+        max-width: 170px;
+    }
+    #home .navbar nav img{
+        width: 130px;
+        margin: 0;
+        padding: 0;
+    }
 
+}
 @media (max-width: 528px) {
     #home .header-contant h1 {
         font-size: 30px;
@@ -684,5 +728,11 @@ a {
        
     }
     
-
+    @media (max-width: 912px){
+        #home .navbar nav ul a {
+            margin:  0;
+            font-size: 10px;
+            transition: all 0.3s ease;
+        }
+    }
 }
