@@ -9,6 +9,19 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 });
 
 
+const menu = document.getElementById("menu");
+const act = document.getElementById("act");
+menu.addEventListener("click", ()=>{
+    toggleMenu();
+
+})
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('open');
+    const nav = document.querySelector('.navbar nav ul');
+    nav.classList.toggle('is-active');
+  }
 
 
 function toggleDarkMode() {
