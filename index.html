@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body data-lang="data-lang">
 
   <header id="home">
     <div class="navbar">
@@ -39,12 +39,12 @@
        <li>
         <a onclick="toggleDarkMode()" class="moon"><i class="fa-solid fa-moon"></i></a>
        </li>
-       <li>
-        <a href="" class="btn-pry">AR</a>
+       <!-- <li>
+        <a href="" class="btn-pry" id="ar">AR</a>
       </li>
       <li>
-        <a href="" class="btn-pry">EN</a>
-      </li>
+        <a href="" class="btn-pry" id="en">EN</a>
+      </li> -->
 
          
         <li>
@@ -108,7 +108,7 @@
 
           </div>
           <div class="col2" id="greeting1">
-            <p dir="rtl"><b>العمر:</b> 22</p> <p dir="rtl"><b>البريد:</b> Mohammedesign2OOO@gmail.com</p> <p dir="rtl"><b>السكن:</b> المرج-ليبيا </p><p dir="rtl"><b> رقم الهاتف: </b>+218 094-2711 759</p>
+            <!-- <p dir="rtl"><b><i class="fa-solid fa-stopwatch-20"></i> العمر:</b> 22</p> <p dir="rtl"><b><i class="fa-solid fa-envelope"></i> البريد:</b> Mohammedesign2OOO@gmail.com</p> <p dir="rtl"><b><i class="fa-solid fa-location-dot"></i> الموقع:</b> المرج-ليبيا </p><p dir="rtl"><b><i class="fa-solid fa-phone"></i> رقم الهاتف: </b>+218 094-2711 759</p> -->
 
           </div>
         </div>
@@ -312,37 +312,51 @@
         </div>
       </div>
     </section>
-    <section id="Contact">
+        <section id="Contact">
       <div class="container">
-        <h2>  <i class="fa-solid fa-headset"></i>الان<span class="text-pry">بوكس </span>
-        </h2>
-        <div class="row">
-          <img src="imgs/Contact us-bro.png" alt="Get In Touch">
-          <form id="contact-form">
-            <label for="name" class="p" dir="rtl">اسمك الثلاثي:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email" class="p" dir="rtl">بريدك الالكتروني:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message" class="p" dir="rtl">رسالة:</label><br>
-            <textarea id="message" name="message" rows="4" required class="tt"></textarea><br>
-            <button type="submit" class="btn-pry" >ارسال</button>
-          </form>
+        <div class="content-contact">
+          <div class="contact-info">  <div dir="rtl">
+            <h3 dir="rtl">الموقع</h3>
+            <p ><i class="fa-solid fa-location-dot"></i> المرج-ليبيا</p>
+            <p ><i class="fa-solid fa-phone"></i> رقم الهاتف: +218 942711 759</p>
+            <p ><i class="fa-solid fa-envelope"></i> البريد: Mohammedesign2OOO@gmail.com</p>
+          </div>
+          <div dir="rtl">
+            <h3>ساعات العمل</h3>
+            <p>من الساعه العاشره صباحا الى العاشره مساءا بتوقيت ليبيا في الايام العادية</p>
+            <p>من الساعه ال5امسه مساءا لى الثامنه مساءا بتوقيت ليبيا في عطلة الاسبوع</p>
+          </div>
+          <div dir="rtl">  <h3>قم بمتابعتي على :</h3>
+            <a href="https://www.facebook.com/profile.php?id=61555489676279&mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.behance.net/b4c8e617/info" target="_blank"><i class="fa-brands fa-behance"></i>
+            </a>
+            <a href="https://www.youtube.com/@uuuPu" target="_blank"><i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammed-mkraz-419602270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          
         </div>
+
+       
+        <form dir="rtl" action="https://formsubmit.co/moohammmed870@gmail.com" method="POST">
+          <input type="text" name="Name" id="Name" placeholder="اكتب إسمك بالكامل" required>
+          <input type="email" name="Email" id="Email" required placeholder="أدخل البريد الإلكتروني">
+          <input type="text" name="subject" id="subject" required placeholder="الموضوع">
+          <textarea name="Message" id="Message" cols="10" rows="5" placeholder="اكتب رسالتك" class="tt"></textarea>
+          <button type="submit" class="btn-pry">إرسال الرساله</button>
+        </form>
       </div>
+      </div>
+     
     </section>
   </main>
   <footer id="footer">
     <p><b> جميع الحقوق محفوظة لصالح محمد ديزاين</b></p>
     <p>&copy; 2024</p>
     <div class="social">
-      <a href="https://www.facebook.com/profile.php?id=61555489676279&mibextid=ZbWKwL " target="_blank"><i class="fa-brands fa-facebook"></i>
-      </a>
-      <a href="https://www.behance.net/b4c8e617/info" target="_blank"><i class="fa-brands fa-behance"></i>
-      </a>
-      <a href="https://www.youtube.com/@uuuPu" target="_blank"><i class="fa-brands fa-youtube"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/mohammed-mkraz-419602270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin-in"></i>
-      </a>
+  
     </div>
 
 
