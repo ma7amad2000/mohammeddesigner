@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,118.6,100..900;1,118.6,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Readex+Pro:wght@160..700&display=swap');
+
 :root {
     --padding: 4%;
     font-size: 16px;
@@ -17,18 +18,24 @@
     --defcolor: rgb(255, 255, 255);
     --whiteshado: rgb(235, 232, 232);
 }
-.dark-mode #home .navbar nav ul{
+
+.dark-mode #home .navbar nav ul {
     background: var(--blak);
     transition: all 0.3s ease;
 }
+
 body {
-    background-color: #fff; /* لون الخلفية الأبيض في الوضع الافتراضي */
-    color: #000; /* لون النص الأسود في الوضع الافتراضي */
+    background-color: #fff;
+    /* لون الخلفية الأبيض في الوضع الافتراضي */
+    color: #000;
+    /* لون النص الأسود في الوضع الافتراضي */
 }
 
 .dark-mode {
-    background-color: var(--blak); /* لون الخلفية الأسود في الوضع الداكن */
-    color: #000000; /* لون النص الأبيض في الوضع الداكن */
+    background-color: var(--blak);
+    /* لون الخلفية الأسود في الوضع الداكن */
+    color: #000000;
+    /* لون النص الأبيض في الوضع الداكن */
     transition: all 0.3s ease;
 }
 
@@ -37,13 +44,15 @@ html {
     color: var(--bb);
     scroll-behavior: smooth;
 }
-.dark-mode #home{
+
+.dark-mode #home {
     background-color: #2b2a2a;
     transition: all 0.3s ease;
 }
-.dark-mode #home .navbar nav ul .btn-pry{
-   background-color: var(--bleu);
-   color: var(--blak);
+
+.dark-mode #home .navbar nav ul .btn-pry {
+    background-color: var(--bleu);
+    color: var(--blak);
 }
 
 
@@ -51,7 +60,8 @@ h1,
 h2 {
     font-family: "Readex Pro", sans-serif;
 }
-.dark-mode h1{
+
+.dark-mode h1 {
     color: rgb(4, 150, 150);
 }
 
@@ -71,6 +81,7 @@ a {
 
 
 }
+
 .dark-mode .text-pry {
     color: var(--bleu);
     transition: all 0.3s ease;
@@ -108,7 +119,8 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.dark-mode .navbar .btn-pry{
+
+.dark-mode .navbar .btn-pry {
     background-color: var(--bleu);
     color: var(--blak);
     transition: all 0.3s ease;
@@ -118,6 +130,7 @@ a {
 .btn-pry:hover {
     background-color: rgb(160, 122, 17);
 }
+
 .dark-mode .btn-pry:hover {
     background-color: #068861;
 }
@@ -126,7 +139,7 @@ a {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
-    
+
 }
 
 /*header start */
@@ -142,14 +155,16 @@ a {
     width: 100%;
     z-index: 1;
 }
+
 .dark-mode #home .navbar {
     background-color: var(--blak);
     transition: all 0.3s ease;
 
 }
-#home .navbar nav .btn-pry{
-   
-    margin: 0.2rem;
+
+#home .navbar nav .btn-pry {
+
+    margin: 2rem 0;
 }
 
 #home .navbar nav {
@@ -161,11 +176,12 @@ a {
     padding: 0.50rem 1rem;
 
 }
-#home .navbar nav ul .moon{
+
+#home .navbar nav ul .moon {
     font-size: 25px;
     padding: 1rem;
-    margin: 2rem;
-    
+    margin: 0;
+
 }
 
 
@@ -182,22 +198,25 @@ a {
     justify-content: center;
     align-items: center;
 }
-#home .navbar nav ul li .btn-pry{
-    margin: 0 2px;
+
+#home .navbar nav ul li .btn-pry {
+    margin: 0 0.40rem;
     font-weight: 600;
 }
 
-#home .navbar nav ul a {
-    margin: 0 20px;
+#home .navbar nav ul li a {
+    margin: 0 10px;
     color: var(--b);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
-#home .navbar nav ul a:hover{
+
+#home .navbar nav ul a:hover {
     color: var(--bb);
 }
-.dark-mode #home .navbar nav ul a:hover{
+
+.dark-mode #home .navbar nav ul a:hover {
     color: var(--whiteshado);
 }
 
@@ -231,6 +250,7 @@ a {
     text-shadow: -3px 3px 3px rgb(0, 0, 0, 0.2);
     margin-top: 10px;
 }
+
 .dark-mode #home .header-contant h1 {
     color: rgb(7, 155, 155);
 }
@@ -241,6 +261,7 @@ a {
     margin: 10px 0;
     font-weight: 500;
 }
+
 .dark-mode #home .header-contant .title {
     color: var(--whiteshado);
     transition: all 0.3s ease;
@@ -260,6 +281,7 @@ a {
     transition: all 0.3s ease;
 
 }
+
 .dark-mode #home .header-contant .social a i {
     background-color: var(--blak);
     color: var(--whiteshado);
@@ -284,19 +306,18 @@ a {
 #About h2,
 #skills h2,
 #Services h2,
-#Portfolio h2,
-#Contact h2 {
+#Portfolio h2 {
     text-align: center;
     font-size: 38px;
     color: var(--blak);
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 .dark-mode #About h2,
 #skills h2,
 #Services h2,
-#Portfolio h2,
-#Contact h2 {
+#Portfolio h2 {
     color: var(--whiteshado);
 }
 
@@ -311,6 +332,7 @@ a {
     margin: 5px auto 0;
     border-radius: 20px;
 }
+
 .dark-mode #About hr,
 #skills hr,
 #Services hr,
@@ -331,12 +353,14 @@ a {
     margin-bottom: 20px;
     font-weight: 900;
 }
+
 #About .about-content .col1 h3 {
     font-size: 28px;
     color: var(--bb);
     margin-bottom: 20px;
     font-weight: 900;
 }
+
 .dark-mode #About .about-content .col1 h3 {
     color: var(--whiteshado);
 }
@@ -346,13 +370,15 @@ a {
     margin-bottom: 20px;
     line-height: 1.4;
 }
+
 .dark-mode #About .about-content .col1 p {
     color: var(--whiteshado);
 }
+
 .dark-mode #About .about-content .col2 p {
     color: var(--whiteshado);
     border-bottom: 0.89px solid rgb(216, 166, 28);
-  
+
 }
 
 
@@ -375,9 +401,11 @@ a {
 #Portfolio h2 {
     color: var(--whiteshado);
 }
-.dark-mode #skills samp{
+
+.dark-mode #skills samp {
     color: var(--b);
 }
+
 #skills .row img {
     max-width: 70px;
 }
@@ -414,6 +442,7 @@ a {
 #Contact {
     background-color: var(--whiteshado);
 }
+
 .dark-mode #Services {
     background-color: var(--blak);
 }
@@ -451,6 +480,7 @@ a {
     transition: all 0.3s ease;
 
 }
+
 .dark-mode #Services .row .item {
     background-color: rgb(19, 18, 18);
     transition: all 0.3s ease;
@@ -460,6 +490,7 @@ a {
 #Services h2 {
     color: var(--bb);
 }
+
 .dark-mode #Services h2 {
     color: var(--whiteshado);
 }
@@ -468,6 +499,7 @@ a {
     margin: 15px 0;
     color: var(--b);
 }
+
 .dark-mode #Services .row .item h3 {
 
     color: var(--bleu);
@@ -477,6 +509,7 @@ a {
     color: #1d1c1c;
     font-size: 14px;
 }
+
 .dark-mode #Services .row .item p {
     color: var(--whiteshado);
 }
@@ -488,7 +521,8 @@ a {
 #Portfolio {
     background-color: var(--bb);
 }
-.dark-mode #Portfolio h2 samp{
+
+.dark-mode #Portfolio h2 samp {
     color: var(--b);
 }
 
@@ -540,58 +574,123 @@ a {
 }
 
 #Contact {
-    padding: 4rem 0;
+    padding: 5rem 0;
     background-color: var(--whiteshado);
 }
-
-#Contact h2{
-    color: var(--blak);
-}
-.dark-mode #Contact{
+.dark-mode #Contact {
+    padding: 5rem 0;
     background-color: var(--blak);
-}
-.dark-mode #Contact h2{
-    color: var(--whiteshado);
-}
-.dark-mode #Contact .row .p{
-    color: var(--whiteshado);
-}
-#Contact .row {
-    margin-top: 4rem;
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--defcolor);
-    box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.2);
-    padding: 2rem 3rem;
-    border-radius: 10px;
-}
-.dark-mode #Contact .row{
-    background-color: rgb(19, 18, 18);
+    transition: all 0.3s ease;
 }
 
-#Contact .row img {
-    max-width: 400px;
+#Contact .container {
+    max-width: 1100px;
 }
-.dark-mode #Contact .row input{
-    background-color: var(--blak);
-    color: var(--whiteshado);
-}
-.dark-mode #Contact .row .tt{
-    background-color: var(--blak);
-    color: var(--whiteshado);
+
+#Contact .content-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
-#Contact .row input,
-#Contact .row textarea {
-    display: block;
-    width: 100%;
-    margin: 20px 0;
+
+#Contact .content-contact .contact-info {
+    width: 50%;
+}
+
+#Contact .content-contact .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#Contact .content-contact .contact-info h3 {
+    font-size: 20px;
+    color: var(--b);
+    margin-bottom: 10px;
+}
+.dark-mode #Contact .content-contact .contact-info p{
+    color: var(--bleu);
+    transition: all 0.3s ease;
+
+}
+#Contact .content-contact .contact-info p {
+    color: #202020;
+    font-size: 14px;
+}
+.dark-mode #Contact .content-contact .contact-info p{
+    color: var(--whiteshado);
+    transition: all 0.3s ease;
+}
+
+#Contact .content-contact .contact-info p i {
+    color: var(--bb);
+    margin-left: 8px;
+}
+.dark-mode #Contact .content-contact .contact-info p i{
+    color: var(--bleu);
+    transition: all 0.3s ease;
+}
+
+#Contact .content-contact .contact-info a i {
+    color: var(--bb);
+    background: var(--b);
     padding: 10px;
-    outline: none;
-    background-color: var(--whiteshado);
-    border: 1px solid rgb(2, 116, 116);
-    font-family: "Readex Pro", sans-serif;
+    border-radius: 50%;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.dark-mode #Contact .content-contact .contact-info a i {
+    color: var(--bb);
+    background: var(--b);
+    transition: all 0.3s ease;
+}
+
+#Contact .content-contact .contact-info a i:hover {
+    background: #045d67ff;
+    color: var(--b);
+}
+
+form {
+    width: 50%;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 80%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--defcolor);
+    transition: all 0.3s ease;
+    color: var(--bb);
+}
+.dark-mode form input{
+    background-color:#20c99660;
+    transition: all 0.3s ease;
+    color: var(--whiteshado);
+}
+.dark-mode form textarea {
+  background-color: #20c99660;
+  transition: all 0.3s ease;
+
+}
+form textarea:hover {
+    box-shadow: 1px 1px 10px var(--bleu);
+}
+
+form input:hover {
+    box-shadow: 1px 1px 10px var(--bleu);
+}
+
+form .btn-pry {
+    padding: 1rem;
+    border-radius: 20px
+}
+
+form .btn-pry:hover {
+    box-shadow: 1px 1px 10px var(--bleu);
 }
 
 #footer {
@@ -599,25 +698,28 @@ a {
     color: var(--b);
     padding: 1rem 0;
     text-align: center;
+
 }
 
 #footer p {
     padding: 0.67rem 0;
-    font-size: 8px;
+    font-size: 10px;
 }
-#footer .social a{
+
+#footer .social a {
     font-size: 10xp;
     margin: 0.75rem;
     color: var(--whiteshado);
 
 }
+
 #menu {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    background: var(--bb);
+    background: var(--b);
     border-radius: 20px;
     cursor: pointer;
     user-select: none;
@@ -625,41 +727,61 @@ a {
     top: 20px;
     right: 20px;
     z-index: 1000;
-  }
+}
 
-  
-    .dark-mode  #menu {
-        background: var(--bleu);
-        transition: all 0.3s ease;
-    }
-    #menu span {
-        width: 50px;
-        height: 4px;
-        background: var(--bb);
-        border-radius: 6px;
-        transition: all 0.3s ease;
-      }
-      #menu.open span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-      
-      #menu.open span:nth-child(2) {
-        opacity: 0;
-      }
-      
-      #menu.open span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-      }
 
-@media (max-width: 853px){
-   #home .navbar nav,
+.dark-mode #menu {
+    background: var(--bleu);
+    transition: all 0.3s ease;
+}
+
+#menu span {
+    width: 50px;
+    height: 4px;
+    background: var(--bb);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 853px) {
+
+    #home .navbar nav,
     #home .navbar nav .btn-pry {
         display: block;
         text-align: center;
         margin: 0.3rem;
+
+    }
+
+    #home .navbar nav ul li .btn-pry {
+        margin: 0 0.40rem;
+        font-weight: 600;
+    }
+
+    #home .navbar nav ul li a {
+        margin: 0 10px;
+        color: var(--b);
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
     }
 }
+
+
 @media (max-width: 768px) {
+
     #home .navbar nav,
     #home .navbar nav .btn-pry {
         display: block;
@@ -678,10 +800,17 @@ a {
         margin-top: 20px;
     }
 
-    #home .navbar nav ul a,
-    #home .navbar nav .btn-pry
-    {
-        margin: 0 8px;
+    #home .navbar nav ul li .btn-pry {
+        margin: 0 0.40rem;
+        font-weight: 600;
+    }
+
+    #home .navbar nav ul li a {
+        margin: 0 10px;
+        color: var(--b);
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
     }
 
     #home .header-contant {
@@ -716,50 +845,66 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #Contact .row img {
-        max-width: 300px;
-        margin: auto;
+    .container {
+        padding: 30px;
     }
 
+    .content-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .contact-info {
+        order: 2;
+        /* تغيير ترتيب عرض معلومات الاتصال */
+    }
+}
+
+
+
+#home .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    background-color: var(--defcolor);
+    border-bottom: 1px solid var(--blak);
+    z-index: 100;
 
 }
-#home .navbar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding-top: 0;
-        background-color: var(--defcolor);
-        border-bottom: 1px solid var(--blak);
-        z-index: 100;
-       
-    }
-@media (max-width: 375px){
-    #menu{
+
+@media (max-width: 375px) {
+    #menu {
         display: block;
     }
-    
+
     #home .header-contant img {
         margin-top: 2rem;
         max-width: 170px;
     }
-    #home .navbar .logo img{
+
+    #home .navbar .logo img {
         width: 100px;
         margin: 0;
         padding: 0;
         margin-bottom: 3rem;
     }
-    #home .navbar nav ul .moon{
+
+    #home .navbar nav ul .moon {
         font-size: 20px;
         margin: 2rem 0;
         padding: 2.40rem;
     }
-    #home .navbar nav ul.is-active{
+
+    #home .navbar nav ul.is-active {
         display: block;
         transition: all 0.3s ease;
         z-index: 1000;
     }
-    #home .navbar{
+
+    #home .navbar {
         position: fixed;
         top: 0;
         left: 0;
@@ -768,67 +913,137 @@ a {
         background-color: var(--defcolor);
         border-bottom: 1px solid var(--blak);
         z-index: 1;
-       
+
     }
-    #menu span{
+
+    #menu span {
         z-index: 100;
     }
-    #home .navbar nav ul  {
+
+    #home .navbar nav ul {
         display: none;
         position: fixed;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 70%;
         height: 100px;
         background: var(--defcolor);
         box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
         margin: 0 0.3px;
         color: var(--b);
         font-weight: 900;
-        font-size: 10px;
+        font-size: 16px;
         transition: all 0.3s ease;
     }
-    #home .navbar nav ul .btn-pry{
+
+    #home .navbar nav ul .btn-pry {
 
         justify-content: space-between;
         align-items: center;
         margin: auto;
         max-width: 1100px;
         padding: 0.50rem 1rem;
-    
+
     }
-    
-    
-    #home .navbar ul li{
+
+
+    #home .navbar ul li {
+        font-weight: 900;
+        font-size: 16px;
+        margin: 20px;
         text-align: center;
-        margin:20px;
-      
+
     }
-    
-    
+
+    #home .navbar nav ul a {
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+  
+
+    .container {
+        padding: 20px;
+    }
+
+    .content-contact {
+        display: block;
+    }
+    #Contact .content-contact .contact-info a i{
+        font-size: 14px;
+        padding: 5px;
+    }
+    #Contact .content-contact .contact-info p {
+        font-size: 10px;
+    }
+
+
 
 
 }
+
+
+/* أسلوب عرض الأجهزة المتوسطة (بين 768 بكسل و 1023 بكسل) */
+
+
+/* أسلوب عرض الأجهزة الكبيرة (أكبر من 1023 بكسل) */
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 40px;
+    }
+
+    .content-contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .contact-info {
+        order: 1;
+        /* تغيير ترتيب عرض معلومات الاتصال */
+    }
+}
+
 @media (max-width: 528px) {
-    #menu{
+    #menu {
         display: block;
         z-index: 100;
     }
 
-    html{
-    font-size: 10px;
-  }
+    html {
+        font-size: 10px;
+    }
+
     #home .header-contant h1 {
         font-size: 30px;
 
 
     }
 
+    .container {
+        padding: 20px;
+    }
+
+    .content-contact {
+        display: block;
+    }
+    #Contact .content-contact .contact-info a i{
+        font-size: 14px;
+        padding: 5px;
+    }
+    #Contact .content-contact .contact-info p {
+        font-size: 10px;
+    }
+
+
 
     #home .header-contant P span {
         font-size: 16px;
     }
-    #home .navbar{
+
+    #home .navbar {
         position: fixed;
         top: 0;
         left: 0;
@@ -837,55 +1052,66 @@ a {
         background-color: var(--defcolor);
         border-bottom: 1px solid var(--blak);
         z-index: 100;
-       
+
     }
-    #home .navbar nav ul.is-active{
+
+    #home .navbar nav ul.is-active {
         display: block;
         transition: all 0.3s ease;
         z-index: 1000;
     }
-    #home .navbar nav ul  {
+
+    #home .navbar nav ul {
         display: none;
         position: fixed;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 70%;
         height: 1000px;
         background: var(--defcolor);
         box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
         margin: 0 0.3px;
         color: var(--b);
         font-weight: 900;
-        font-size: 10px;
+        font-size: 16px;
         transition: all 0.3s ease;
         z-index: -100;
     }
-    #home .navbar nav ul .btn-pry{
+
+    #home .navbar nav ul .btn-pry {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    
-    #home .navbar ul li{
-        text-align: center;
-        margin:20px;
-      
+
+
+    #home .navbar ul li {
+
+        margin: 20px;
+        font-weight: 900;
+        font-size: 16px;
+
     }
-    
-      
-    
-    #home a img{
+
+    #home .navbar nav ul a {
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+    #home a img {
         width: 170px;
         margin: 0 2rem;
         padding: var(--padding);
     }
-    #home .navbar{
-        height:  100px;
+
+    #home .navbar {
+        height: 100px;
     }
-    
-   
-    
+
+
+
 
     #home .header-contant .title {
         font-size: 14px;
@@ -899,45 +1125,48 @@ a {
     #About h2,
     #skills h2,
     #Services h2,
-    #Portfolio h2,
-    #Contact h2 {
+    #Portfolio h2 {
         font-size: 33px;
         margin: 0.87rem;
     }
+
     #About .about-content .col1 h3 {
         font-size: 20px;
     }
+
     #About .about-content .col1 p {
         font-size: 13px;
     }
+
     #About .about-content .col2 p {
         font-size: 13px;
     }
+
     #skills .skills-content .row,
     #Services .row,
-    #Portfolio .row{
+    #Portfolio .row {
         grid-template-columns: 1fr;
     }
-    #Contact .row {
-        padding: 2rem 1rem;
-    }
-    #home .navbar nav ul a ,
+
+    #home .navbar nav ul a,
     #home .navbar nav .btn-pry {
         font-size: 10px;
         margin: 0.2rem;
     }
+
     #home .navbar nav .btn-pry {
         width: 10px;
         font-size: 13px;
-      
- 
-       
+
+
+
     }
 }
-    @media (max-width: 912px){
-        #home .navbar nav ul a {
-            margin:  0.4rem;
-            font-size: 10px;
-            transition: all 0.3s ease;
-        }
+
+@media (max-width: 912px) {
+    #home .navbar nav ul a {
+        margin: 0.4rem;
+        font-size: 10px;
+        transition: all 0.3s ease;
     }
+}
