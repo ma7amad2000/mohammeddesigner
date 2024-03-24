@@ -603,6 +603,13 @@ a {
 
 #footer p {
     padding: 0.67rem 0;
+    font-size: 8px;
+}
+#footer .social a{
+    font-size: 10xp;
+    margin: 0.75rem;
+    color: var(--whiteshado);
+
 }
 #menu {
     display: none;
