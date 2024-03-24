@@ -605,7 +605,7 @@ a {
     padding: 0.67rem 0;
 }
 #menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 25px;
