@@ -640,14 +640,18 @@ a {
     transition: all 0.3s ease;
 }
 .dark-mode #Contact .content-contact .contact-info a i {
-    color: var(--bb);
-    background: var(--b);
+    color: var(--blak);
+    background: var(--bleu);
     transition: all 0.3s ease;
 }
 
 #Contact .content-contact .contact-info a i:hover {
     background: #045d67ff;
-    color: var(--b);
+    color: var(--bleu);
+}
+.dark-mode #Contact .content-contact .contact-info a i:hover {
+    background: var(--bleu);
+    color: #045d67ff;
 }
 
 form {
