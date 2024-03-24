@@ -674,6 +674,7 @@ textarea {
 .dark-mode form textarea {
   background-color: #20c99660;
   transition: all 0.3s ease;
+  color: var(--whiteshado);
 
 }
 form textarea:hover {
