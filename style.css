@@ -17,7 +17,10 @@
     --defcolor: rgb(255, 255, 255);
     --whiteshado: rgb(235, 232, 232);
 }
-
+.dark-mode #home .navbar nav ul{
+    background: var(--blak);
+    transition: all 0.3s ease;
+}
 body {
     background-color: #fff; /* لون الخلفية الأبيض في الوضع الافتراضي */
     color: #000; /* لون النص الأسود في الوضع الافتراضي */
@@ -38,6 +41,11 @@ html {
     background-color: #2b2a2a;
     transition: all 0.3s ease;
 }
+.dark-mode #home .navbar nav ul .btn-pry{
+   background-color: var(--bleu);
+   color: var(--blak);
+}
+
 
 h1,
 h2 {
@@ -80,6 +88,7 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 #home .navbar nav .btn-pry {
     background-color: var(--b);
     color: var(--bb);
@@ -94,6 +103,12 @@ a {
 }
 
 .dark-mode .btn-pry {
+    background-color: var(--bleu);
+    color: var(--blak);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.dark-mode .navbar .btn-pry{
     background-color: var(--bleu);
     color: var(--blak);
     transition: all 0.3s ease;
@@ -133,8 +148,8 @@ a {
 
 }
 #home .navbar nav .btn-pry{
- 
-    margin: 0.30rem;
+   
+    margin: 0.2rem;
 }
 
 #home .navbar nav {
@@ -143,27 +158,23 @@ a {
     align-items: center;
     margin: auto;
     max-width: 1100px;
-    padding: 1.5rem 2rem;
+    padding: 0.50rem 1rem;
 
 }
 #home .navbar nav ul .moon{
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+    font-size: 25px;
+    padding: 1rem;
+    margin: 2rem;
     
 }
 
-#home #logo {
-    color: var(--bb);
-    font-size: 24px;
-    font-weight: 600;
-}
+
 .dark-mode #home #logo {
     color: var(--whiteshado);
 }
 
 #home #logo img {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 #home .navbar nav ul {
@@ -171,7 +182,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-#home .navbar nav ul .btn-pry{
+#home .navbar nav ul li .btn-pry{
     margin: 0 2px;
     font-weight: 600;
 }
@@ -180,7 +191,7 @@ a {
     margin: 0 20px;
     color: var(--b);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 10px;
     transition: all 0.3s ease;
 }
 #home .navbar nav ul a:hover{
@@ -593,6 +604,46 @@ a {
 #footer p {
     padding: 0.67rem 0;
 }
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: var(--bb);
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  
+    .dark-mode  #menu {
+        background: var(--bleu);
+        transition: all 0.3s ease;
+    }
+    #menu span {
+        width: 50px;
+        height: 4px;
+        background: var(--bb);
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+      #menu.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      #menu.open span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      #menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+
 @media (max-width: 853px){
    #home .navbar nav,
     #home .navbar nav .btn-pry {
@@ -665,36 +716,177 @@ a {
 
 
 }
+#home .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+        background-color: var(--defcolor);
+        border-bottom: 1px solid var(--blak);
+        z-index: 100;
+       
+    }
 @media (max-width: 375px){
+    #menu{
+        display: block;
+    }
+    
     #home .header-contant img {
         margin-top: 2rem;
         max-width: 170px;
     }
-    #home .navbar nav img{
-        width: 130px;
+    #home .navbar .logo img{
+        width: 100px;
         margin: 0;
         padding: 0;
+        margin-bottom: 3rem;
     }
+    #home .navbar nav ul .moon{
+        font-size: 20px;
+        margin: 2rem 0;
+        padding: 2.40rem;
+    }
+    #home .navbar nav ul.is-active{
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    #home .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+        background-color: var(--defcolor);
+        border-bottom: 1px solid var(--blak);
+        z-index: 1;
+       
+    }
+    #menu span{
+        z-index: 100;
+    }
+    #home .navbar nav ul  {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100px;
+        background: var(--defcolor);
+        box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+        margin: 0 0.3px;
+        color: var(--b);
+        font-weight: 900;
+        font-size: 10px;
+        transition: all 0.3s ease;
+    }
+    #home .navbar nav ul .btn-pry{
+
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1100px;
+        padding: 0.50rem 1rem;
+    
+    }
+    
+    
+    #home .navbar ul li{
+        text-align: center;
+        margin:20px;
+      
+    }
+    
+    
+
 
 }
 @media (max-width: 528px) {
+    #menu{
+        display: block;
+        z-index: 100;
+    }
+
+    html{
+    font-size: 10px;
+  }
     #home .header-contant h1 {
         font-size: 30px;
 
 
     }
 
+
     #home .header-contant P span {
         font-size: 16px;
     }
+    #home .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+        background-color: var(--defcolor);
+        border-bottom: 1px solid var(--blak);
+        z-index: 100;
+       
+    }
+    #home .navbar nav ul.is-active{
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    #home .navbar nav ul  {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 1000px;
+        background: var(--defcolor);
+        box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+        margin: 0 0.3px;
+        color: var(--b);
+        font-weight: 900;
+        font-size: 10px;
+        transition: all 0.3s ease;
+        z-index: -100;
+    }
+    #home .navbar nav ul .btn-pry{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #home .navbar ul li{
+        text-align: center;
+        margin:20px;
+      
+    }
+    
+      
+    
+    #home a img{
+        width: 170px;
+        margin: 0 2rem;
+        padding: var(--padding);
+    }
+    #home .navbar{
+        height:  100px;
+    }
+    
+   
+    
 
     #home .header-contant .title {
         font-size: 14px;
     }
 
     #home .header-contant img {
-        margin-top: 2rem;
-        max-width: 270px;
+        margin-top: 1rem;
+        max-width: 230px;
     }
 
     #About h2,
@@ -702,10 +894,17 @@ a {
     #Services h2,
     #Portfolio h2,
     #Contact h2 {
-        font-size: 28px;
+        font-size: 33px;
+        margin: 0.87rem;
     }
     #About .about-content .col1 h3 {
         font-size: 20px;
+    }
+    #About .about-content .col1 p {
+        font-size: 13px;
+    }
+    #About .about-content .col2 p {
+        font-size: 13px;
     }
     #skills .skills-content .row,
     #Services .row,
@@ -727,7 +926,7 @@ a {
  
        
     }
-    
+}
     @media (max-width: 912px){
         #home .navbar nav ul a {
             margin:  0.4rem;
@@ -735,4 +934,3 @@ a {
             transition: all 0.3s ease;
         }
     }
-}
