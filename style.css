@@ -714,7 +714,7 @@ form .btn-pry:hover {
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    background: var(--b);
+    background: none;
     border-radius: 20px;
     cursor: pointer;
     user-select: none;
@@ -722,11 +722,12 @@ form .btn-pry:hover {
     top: 20px;
     right: 20px;
     z-index: 1000;
+    font-size: 20px;
 }
 
 
 .dark-mode #menu {
-    background: var(--bleu);
+    color: var(--whiteshado);
     transition: all 0.3s ease;
 }
 
@@ -870,6 +871,11 @@ form .btn-pry:hover {
 @media (max-width: 375px) {
     #menu {
         display: block;
+    }
+    #menu p{
+        font-weight: 800;
+        font-size: 16px;
+        margin-right: 4px;
     }
     #home .navbar nav ul p{
         display: block;
@@ -1169,6 +1175,11 @@ form .btn-pry:hover {
     #home .navbar nav .btn-pry {
         font-size: 10px;
         margin: 0.2rem;
+    }
+    #menu p{
+        font-weight: 800;
+        font-size: 16px;
+        margin-right: 4px;
     }
 
 }
