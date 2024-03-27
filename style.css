@@ -99,27 +99,13 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
-#home .navbar nav ul p {
+#home .navbar nav ul p{
     display: none;
 }
-
-#home .navbar nav ul {
+#home .navbar nav ul{
     margin: 0 15px;
 }
 
-#home .navbar nav .btn-pry {
-    background-color: var(--b);
-    color: var(--bb);
-    padding: 8px 20px;
-    width: 50px;
-    font-weight: 400;
-    border: none;
-    font-size: 13px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
 
 .dark-mode .btn-pry {
     background-color: var(--bleu);
@@ -170,10 +156,7 @@ a {
 
 }
 
-#home .navbar nav .btn-pry {
 
-    margin: 2rem 0;
-}
 
 #home .navbar nav {
     display: flex;
@@ -207,10 +190,7 @@ a {
     align-items: center;
 }
 
-#home .navbar nav ul li .btn-pry {
-    margin: 0 0.40rem;
-    font-weight: 600;
-}
+
 
 #home .navbar nav ul li a {
     margin: 0 10px;
@@ -585,7 +565,6 @@ a {
     padding: 5rem 0;
     background-color: var(--whiteshado);
 }
-
 .dark-mode #Contact {
     padding: 5rem 0;
     background-color: var(--blak);
@@ -617,31 +596,27 @@ a {
     color: var(--b);
     margin-bottom: 10px;
 }
-
-.dark-mode #Contact .content-contact .contact-info p {
+.dark-mode #Contact .content-contact .contact-info p{
     color: var(--bleu);
     transition: all 0.3s ease;
 
 }
-
 #Contact .content-contact .contact-info p {
     color: #202020;
     font-size: 14px;
     margin: 5px;
 }
-
-.dark-mode #Contact .content-contact .contact-info p {
+.dark-mode #Contact .content-contact .contact-info p{
     color: var(--whiteshado);
     transition: all 0.3s ease;
-
+    
 }
 
 #Contact .content-contact .contact-info p i {
     color: var(--bb);
     margin-left: 8px;
 }
-
-.dark-mode #Contact .content-contact .contact-info p i {
+.dark-mode #Contact .content-contact .contact-info p i{
     color: var(--bleu);
     transition: all 0.3s ease;
 }
@@ -654,7 +629,6 @@ a {
     font-size: 17px;
     transition: all 0.3s ease;
 }
-
 .dark-mode #Contact .content-contact .contact-info a i {
     color: var(--blak);
     background: var(--bleu);
@@ -665,7 +639,6 @@ a {
     background: #045d67ff;
     color: var(--bleu);
 }
-
 .dark-mode #Contact .content-contact .contact-info a i:hover {
     background: var(--bleu);
     color: #045d67ff;
@@ -687,20 +660,17 @@ textarea {
     transition: all 0.3s ease;
     color: var(--bb);
 }
-
-.dark-mode form input {
-    background-color: #20c99660;
+.dark-mode form input{
+    background-color:#20c99660;
     transition: all 0.3s ease;
     color: var(--whiteshado);
 }
-
 .dark-mode form textarea {
-    background-color: #20c99660;
-    transition: all 0.3s ease;
-    color: var(--whiteshado);
+  background-color: #20c99660;
+  transition: all 0.3s ease;
+  color: var(--whiteshado);
 
 }
-
 form textarea:hover {
     box-shadow: 1px 1px 10px var(--bleu);
 }
@@ -742,8 +712,8 @@ form .btn-pry:hover {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 50px;
-    height: 25px;
+    width: 25px;
+    height: 20px;
     background: var(--b);
     border-radius: 20px;
     cursor: pointer;
@@ -752,29 +722,21 @@ form .btn-pry:hover {
     top: 20px;
     right: 20px;
     z-index: 1000;
+}
 
-
-}
-.dark-mode #menu{
-    background-color: var(--bleu);
-    color: var(--blak);
-}
-#home .navbar nav .btn-pry {
-    display: none;
-}
-#menu a {
-    text-align: center;
-    border: none;
-    font-weight: 800;
-    color: var(--blak);
-}
 
 .dark-mode #menu {
     background: var(--bleu);
     transition: all 0.3s ease;
 }
 
-
+#menu span {
+    width: 50px;
+    height: 4px;
+    background: var(--bb);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
 
 #menu.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -794,14 +756,11 @@ form .btn-pry:hover {
     #home .navbar nav .btn-pry {
         display: block;
         text-align: center;
-        margin: 0.3rem;
+        margin: 0.30rem;
 
     }
 
-    #home .navbar nav ul li .btn-pry {
-        margin: 0 0.40rem;
-        font-weight: 600;
-    }
+   
 
     #home .navbar nav ul li a {
         margin: 0 10px;
@@ -820,10 +779,8 @@ form .btn-pry:hover {
         display: block;
         text-align: center;
         margin: 0.3rem;
-
     }
 
- 
     #home .navbar nav .logo {
         display: block;
         align-items: center;
@@ -914,6 +871,9 @@ form .btn-pry:hover {
     #menu {
         display: block;
     }
+    #home .navbar nav ul p{
+        display: block;
+    }
 
     #home .header-contant img {
         margin-top: 2rem;
@@ -928,11 +888,11 @@ form .btn-pry:hover {
     }
 
     #home .navbar nav ul .moon {
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
+       padding: 10px;
+       margin: 10px 0;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
 
     }
 
@@ -958,10 +918,6 @@ form .btn-pry:hover {
         z-index: 100;
     }
 
-    #home .navbar nav ul p {
-        display: block;
-    }
-
     #home .navbar nav ul {
         display: none;
         position: fixed;
@@ -979,15 +935,7 @@ form .btn-pry:hover {
         transition: all 0.3s ease;
     }
 
-    #home .navbar nav ul .btn-pry {
-
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        max-width: 1100px;
-        padding: 0.50rem 1rem;
-
-    }
+   
 
 
     #home .navbar ul li {
@@ -999,26 +947,25 @@ form .btn-pry:hover {
     }
 
     #home .navbar nav ul a {
-        display: block;
-        padding: 10px;
-        margin: 5px 0;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 40px;
+       display: block;
+       padding: 10px;
+       margin: 5px 0;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
+       gap: 40px;
     }
-
     #home .navbar nav ul a:hover {
         background-color: var(--bb);
         color: var(--whiteshado);
     }
-
-    .dark-mode #home .navbar nav ul a:hover {
+    .dark-mode  #home .navbar nav ul a:hover{
         background-color: var(--bleu);
         color: var(--blak)
+
     }
 
-
+  
 
     .container {
         padding: 20px;
@@ -1027,12 +974,10 @@ form .btn-pry:hover {
     .content-contact {
         display: block;
     }
-
-    #Contact .content-contact .contact-info a i {
+    #Contact .content-contact .contact-info a i{
         font-size: 14px;
         padding: 5px;
     }
-
     #Contact .content-contact .contact-info p {
         font-size: 10px;
     }
@@ -1052,7 +997,6 @@ form .btn-pry:hover {
         padding: 40px;
     }
 
-  
     .content-contact {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1088,12 +1032,10 @@ form .btn-pry:hover {
     .content-contact {
         display: block;
     }
-
-    #Contact .content-contact .contact-info a i {
+    #Contact .content-contact .contact-info a i{
         font-size: 14px;
         padding: 5px;
     }
-
     #Contact .content-contact .contact-info p {
         font-size: 10px;
     }
@@ -1102,6 +1044,9 @@ form .btn-pry:hover {
 
     #home .header-contant P span {
         font-size: 16px;
+    }
+    #home .navbar nav ul p{
+        display: block;
     }
 
     #home .navbar {
@@ -1128,24 +1073,18 @@ form .btn-pry:hover {
         top: 0;
         left: 0;
         width: 70%;
-        height: 100px;
+        height: 1000px;
         background: var(--defcolor);
         box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
         margin: 0 0.3px;
         color: var(--b);
         font-weight: 900;
-        scroll-behavior: smooth;
         font-size: 16px;
         transition: all 0.3s ease;
+        z-index: -100;
     }
-    #home .navbar nav ul p {
-        display: block;
-    }
-    #home .navbar nav ul .btn-pry {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+    
 
 
     #home .navbar ul li {
@@ -1157,13 +1096,10 @@ form .btn-pry:hover {
     }
 
     #home .navbar nav ul a {
-        display: block;
-        padding: 10px;
-        margin: 5px 0;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 40px;
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 20px;
+        transition: all 0.3s ease;
     }
 
     #home a img {
@@ -1220,13 +1156,6 @@ form .btn-pry:hover {
         margin: 0.2rem;
     }
 
-    #home .navbar nav .btn-pry {
-        width: 10px;
-        font-size: 13px;
-
-
-
-    }
 }
 
 @media (max-width: 912px) {
@@ -1235,8 +1164,4 @@ form .btn-pry:hover {
         font-size: 10px;
         transition: all 0.3s ease;
     }
-
-   
-
-   
 }
